@@ -240,7 +240,7 @@ Need your machine's serial number but the label is damaged or you're just too la
 sudo /usr/sbin/dmidecode -s system-serial-number
 ```
 
-## Splitting up a large file
+## Splitting up a large audio file
 The `-segment_time` value is the amount of *seconds* that the audio segment should be.
 
 ```bash
