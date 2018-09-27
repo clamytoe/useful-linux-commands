@@ -29,6 +29,14 @@ curl -s -H $'Referer: https://haveibeenpwned.com/' https://api.pwnedpasswords.co
 cat /dev/null > ~/.local/share/recently-used.xbel
 ```
 
+## Creat a favicon.ico from a png file
+The following requires that the latest version of *imagemagick* be installed on your system. The `-background transparent` portion is optional.
+
+```bash
+#!/bin/bash
+convert -background transparent $1 -define icon:auto-resize=16,32,48,64,128 favicon.ico
+```
+
 ## Converting from .m4b to .mp3
 
 ```bash
